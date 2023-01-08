@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/%7Bcyber-react%7D/static/css/main.cb13e839.css",
+    "main.js": "/%7Bcyber-react%7D/static/js/main.2576a88b.js",
+    "index.html": "/%7Bcyber-react%7D/index.html",
+    "main.cb13e839.css.map": "/%7Bcyber-react%7D/static/css/main.cb13e839.css.map",
+    "main.2576a88b.js.map": "/%7Bcyber-react%7D/static/js/main.2576a88b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb13e839.css",
+    "static/js/main.2576a88b.js"
+  ]
+}
