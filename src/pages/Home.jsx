@@ -20,6 +20,7 @@ const Home = () => {
     window.scrollTo({
 top : elementRef.current.offsetTop,
 behavior: 'smooth'
+
     });
   }
 
