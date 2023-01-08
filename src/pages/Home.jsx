@@ -21,6 +21,8 @@ const Home = () => {
 top : elementRef.current.offsetTop,
 behavior: 'smooth'
 
+
+
     });
   }
 
