@@ -74,6 +74,8 @@ behavior: 'smooth'
           </div>
         </section>
         <footer className="footer">
+
+          
           <p className="footer-title">Copyrights @ <span>Cyber Life 2022</span></p>
         </footer>
               </div>
@@ -81,6 +83,8 @@ behavior: 'smooth'
           
          
       
+
+        
 
   )
 }
