@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
+import { useEffect } from 'react';
 
-import { ReactDOM } from "react";
+import { useNavigate } from 'react-router-dom';
+
 
 import { useRef } from "react";
-import { useNavigate} from "react-router-dom"
+
 const Navbar = () => {
   const { user, logOut } = UserAuth();
 
@@ -32,6 +34,24 @@ behavior: 'smooth'
 
 
 
+  const { googleSignIn } = UserAuth();
+  const navigate = useNavigate();
+
+  const handleGoogleSignIn = async () => {
+    try {
+      await googleSignIn();
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    if (user != null) {
+      navigate('/account');
+    }
+  }, [user]);
+
+
   return (
 
 
@@ -49,7 +69,7 @@ behavior: 'smooth'
           {user?.displayName ? (
         <Link onClick={handleSignOut}>Logout</Link>
       ) : (
-        <Link to='/signin'>Sign in</Link>
+        <Link onClick={handleGoogleSignIn} to='/signin'>Sign in</Link>
       )}
           </nav>
         </header>

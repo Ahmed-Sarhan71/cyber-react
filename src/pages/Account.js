@@ -38,12 +38,21 @@ behavior: 'smooth'
     <div>
     
     <section className="main">
+      {/* <div className='w-[300px] m-auto'>
+      
+      <div>
+        <p>Welcome, {user?.displayName}</p>
+      </div>
+      <button onClick={handleSignOut} className='border py-2 px-5 mt-10'>
+        Logout
+      </button>
+    </div> */}
           <div>
-            <h2><br /><span>Welcome to Cyberlife</span></h2>
+            <h2><br /><span>Welcome {user?.displayName} to Cyberlife</span></h2>
             <h3>Our website offers a range of services to help university students succeed, including academic coaching, tutoring, and study skills development. 
               Our team is dedicated to helping students achieve their goals and overcome any challenges they face. 
             </h3>
-           
+            <a onClick={handleSignOut}  className="main-btn">LOG OUT</a>
           </div>
         </section>
         <section   className="cards" id="services">
@@ -78,18 +87,7 @@ behavior: 'smooth'
                 </strong>
               </div>
             </div>
-            <div className="project-card">
-              <div className="project-image">
-                <img src="images/work3.jpg" />
-              </div>
-              <div className="project-info">
-                <p className="project-category">MarketPlace for MMU students</p>
-                <strong className="project-title">
-                  <span>CyberMarket</span>
-                  <a to="#" className="more-details">More details</a>
-                </strong>
-              </div>
-            </div>
+            
             <div className="project-card">
               <div className="project-image">
                 <img src="images/work4.jpg" />
@@ -162,15 +160,7 @@ behavior: 'smooth'
          
        
 
-    <div className='w-[300px] m-auto'>
-      <h1 className='text-center text-2xl font-bold pt-12'>Account</h1>
-      <div>
-        <p>Welcome, {user?.displayName}</p>
-      </div>
-      <button onClick={handleSignOut} className='border py-2 px-5 mt-10'>
-        Logout
-      </button>
-    </div>
+ 
     </div>
   
   );
